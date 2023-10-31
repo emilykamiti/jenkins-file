@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                 git url: 'https://github.com/emilykamiti/jenkins-file', branch: 'main'
+                 git url: 'giturl.git', branch: 'main'
             }
         }
 
