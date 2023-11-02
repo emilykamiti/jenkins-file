@@ -13,7 +13,7 @@ pipeline {
             steps {
                 sh 'pip install -r requirements.txt'  
 
-                sh 'pytest'  // Assumes your tests are in files named test_*.py
+                sh 'pytest'  
             }
         }
     }
