@@ -11,10 +11,8 @@ pipeline {
 
         stage('Test') {
             steps {
-                // Install project dependencies (if any)
-                sh 'pip install -r requirements.txt'  // If you have a requirements.txt file
+                sh 'pip install -r requirements.txt'  
 
-                // Run pytest
                 sh 'pytest'  // Assumes your tests are in files named test_*.py
             }
         }
